@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "echo Backend has no compile step; use 'npm start' in production",
+    "build": "echo 'Backend has no compile step - use npm start in production'",
     "seed:stats": "node scripts/seed-product-stats.js",
     "reset:stats": "node scripts/reset-product-stats.js"
   },
