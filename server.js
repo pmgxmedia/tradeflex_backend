@@ -15,6 +15,7 @@ import settingsRoutes from './routes/settingsRoutes.js';
 import bannerRoutes from './routes/bannerRoutes.js';
 import heroBannerRoutes from './routes/heroBannerRoutes.js';
 import analyticsRoutes from './routes/analyticsRoutes.js';
+import deliveryRoutes from './routes/deliveryRoutes.js';
 import { errorHandler, notFound } from './middleware/errorMiddleware.js';
 
 // Load environment variables
@@ -64,9 +65,6 @@ app.use('/api/settings', settingsRoutes);
 app.use('/api/banners', bannerRoutes);
 app.use('/api/hero-banners', heroBannerRoutes);
 app.use('/api/analytics', analyticsRoutes);
-
-// Import and use delivery routes
-import deliveryRoutes from './routes/deliveryRoutes.js';
 app.use('/api/delivery', deliveryRoutes);
 
 // Error Handling Middleware
